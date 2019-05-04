@@ -1,4 +1,4 @@
-update=2019/05/02 23:05:29
+update=2019/05/04 12:13:24
 version=1
 last_client=kicad
 [general]
@@ -29,6 +29,7 @@ MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
 TrackWidth1=0.25
+TrackWidth2=0.25
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -48,7 +49,7 @@ CopperTextItalic=0
 CopperTextUpright=1
 EdgeCutLineWidth=0.05
 CourtyardLineWidth=0.05
-OthersLineWidth=2.5
+OthersLineWidth=0.2
 OthersTextSizeV=1
 OthersTextSizeH=1
 OthersTextSizeThickness=0.15
