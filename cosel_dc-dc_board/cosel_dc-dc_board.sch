@@ -58,33 +58,10 @@ Wire Wire Line
 NoConn ~ 5000 3750
 NoConn ~ 5000 3550
 NoConn ~ 5800 3650
-$Comp
-L SamacSys_Parts:B2PS-VH(LF)(SN) J2
-U 1 1 5CCB0FE1
-P 6750 3050
-F 0 "J2" H 7150 3315 50  0000 C CNN
-F 1 "B2PS-VH(LF)(SN)" H 7150 3224 50  0000 C CNN
-F 2 "SamacSys_Parts:B2PS-VH" H 7400 3150 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/1347/0900766b81347516.pdf" H 7400 3050 50  0001 L CNN
-F 4 "VH-3.96mm Header side entry 2 way JST VH Series, Series Number B2PS, 3.96mm Pitch 2 Way 1 Row Right Angle PCB Header, Solder Termination, 10A" H 7400 2950 50  0001 L CNN "Description"
-F 5 "" H 7400 2850 50  0001 L CNN "Height"
-F 6 "JST (JAPAN SOLDERLESS TERMINALS)" H 7400 2750 50  0001 L CNN "Manufacturer_Name"
-F 7 "B2PS-VH(LF)(SN)" H 7400 2650 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 7400 2550 50  0001 L CNN "Mouser Part Number"
-F 9 "" H 7400 2450 50  0001 L CNN "Mouser Price/Stock"
-F 10 "1667299" H 7400 2350 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/1667299" H 7400 2250 50  0001 L CNN "RS Price/Stock"
-	1    6750 3050
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5800 3400 5900 3400
 Wire Wire Line
-	6750 3400 6750 3050
-Wire Wire Line
 	5800 3900 5900 3900
-Wire Wire Line
-	7550 3900 7550 3050
 Wire Wire Line
 	5800 3750 5900 3750
 Wire Wire Line
@@ -180,44 +157,7 @@ Wire Wire Line
 	6400 3500 6400 3400
 Connection ~ 6400 3400
 Wire Wire Line
-	6400 3400 6750 3400
-Wire Wire Line
 	6400 3800 6400 3900
-Connection ~ 6400 3900
-Wire Wire Line
-	6400 3900 7550 3900
-$Comp
-L SamacSys_Parts:S3B-XH-A(LF)(SN) J3
-U 1 1 5CCB4263
-P 7700 3450
-F 0 "J3" H 8328 3396 50  0000 L CNN
-F 1 "S3B-XH-A(LF)(SN)" H 8328 3305 50  0000 L CNN
-F 2 "SamacSys_Parts:SHDR3W80P0X250_1X3_990X610X700P" H 8350 3550 50  0001 L CNN
-F 3 "http://uk.rs-online.com/web/p/products/1724923" H 8350 3450 50  0001 L CNN
-F 4 "XH-2.5mm Header side entry 3 way JST XH Series, Series Number S3B, 2.5mm Pitch 3 Way 1 Row Right Angle PCB Header, Solder Termination, 3A" H 8350 3350 50  0001 L CNN "Description"
-F 5 "7" H 8350 3250 50  0001 L CNN "Height"
-F 6 "1724923" H 8350 3150 50  0001 L CNN "RS Part Number"
-F 7 "http://uk.rs-online.com/web/p/products/1724923" H 8350 3050 50  0001 L CNN "RS Price/Stock"
-F 8 "JST (JAPAN SOLDERLESS TERMINALS)" H 8350 2950 50  0001 L CNN "Manufacturer_Name"
-F 9 "S3B-XH-A(LF)(SN)" H 8350 2850 50  0001 L CNN "Manufacturer_Part_Number"
-	1    7700 3450
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6750 3400 7250 3400
-Wire Wire Line
-	7650 3400 7650 3450
-Wire Wire Line
-	7650 3450 7700 3450
-Connection ~ 6750 3400
-Wire Wire Line
-	7550 3900 7650 3900
-Wire Wire Line
-	7650 3900 7650 3650
-Wire Wire Line
-	7650 3650 7700 3650
-Connection ~ 7550 3900
-NoConn ~ 7700 3550
 $Comp
 L Device:LED D2
 U 1 1 5CCD03B7
@@ -243,12 +183,7 @@ $EndComp
 Wire Wire Line
 	6600 4500 6900 4500
 Wire Wire Line
-	7250 3400 7250 4500
-Wire Wire Line
 	7250 4500 7200 4500
-Connection ~ 7250 3400
-Wire Wire Line
-	7250 3400 7650 3400
 $Comp
 L power:GND #PWR06
 U 1 1 5CCD17A7
@@ -304,4 +239,31 @@ Wire Wire Line
 	3300 3750 3450 3750
 Wire Wire Line
 	3300 4050 3300 4200
+$Comp
+L Connector:Screw_Terminal_01x02 J2
+U 1 1 5CD313B1
+P 7850 3600
+F 0 "J2" H 7930 3592 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 7930 3501 50  0000 L CNN
+F 2 "TerminalBlock:TerminalBlock_Altech_AK300-2_P5.00mm" H 7850 3600 50  0001 C CNN
+F 3 "~" H 7850 3600 50  0001 C CNN
+	1    7850 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 3400 7250 3400
+Wire Wire Line
+	7250 3400 7250 3700
+Wire Wire Line
+	6400 3900 7450 3900
+Wire Wire Line
+	7450 3900 7450 3600
+Wire Wire Line
+	7450 3600 7650 3600
+Connection ~ 6400 3900
+Wire Wire Line
+	7650 3700 7250 3700
+Connection ~ 7250 3700
+Wire Wire Line
+	7250 3700 7250 4500
 $EndSCHEMATC
