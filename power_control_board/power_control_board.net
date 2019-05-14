@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source D:\Users\taka-\Documents\circuit\power_control_board\power_control_board.sch)
-    (date "2019/05/12 18:01:20")
+    (date "2019/05/14 20:39:13")
     (tool "Eeschema (5.1.0)-1")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -29,7 +29,7 @@
       (tstamp 5CC5759C))
     (comp (ref D1)
       (value D)
-      (footprint SamacSys_Parts:DIOAD1340W57L300D260)
+      (footprint Diode_THT:D_DO-41_SOD81_P7.62mm_Horizontal)
       (datasheet ~)
       (libsource (lib Device) (part D) (description Diode))
       (sheetpath (names /) (tstamps /))

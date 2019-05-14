@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:cosel_dc-dc_board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -77,25 +76,6 @@ Connection ~ 5900 3400
 Wire Wire Line
 	5900 3400 6400 3400
 $Comp
-L SamacSys_Parts:B2PS-VH(LF)(SN) J1
-U 1 1 5CCB29A1
-P 2800 3200
-F 0 "J1" H 3200 3465 50  0000 C CNN
-F 1 "B2PS-VH(LF)(SN)" H 3200 3374 50  0000 C CNN
-F 2 "SamacSys_Parts:B2PS-VH" H 3450 3300 50  0001 L CNN
-F 3 "http://docs-emea.rs-online.com/webdocs/1347/0900766b81347516.pdf" H 3450 3200 50  0001 L CNN
-F 4 "VH-3.96mm Header side entry 2 way JST VH Series, Series Number B2PS, 3.96mm Pitch 2 Way 1 Row Right Angle PCB Header, Solder Termination, 10A" H 3450 3100 50  0001 L CNN "Description"
-F 5 "" H 3450 3000 50  0001 L CNN "Height"
-F 6 "JST (JAPAN SOLDERLESS TERMINALS)" H 3450 2900 50  0001 L CNN "Manufacturer_Name"
-F 7 "B2PS-VH(LF)(SN)" H 3450 2800 50  0001 L CNN "Manufacturer_Part_Number"
-F 8 "" H 3450 2700 50  0001 L CNN "Mouser Part Number"
-F 9 "" H 3450 2600 50  0001 L CNN "Mouser Price/Stock"
-F 10 "1667299" H 3450 2500 50  0001 L CNN "RS Part Number"
-F 11 "http://uk.rs-online.com/web/p/products/1667299" H 3450 2400 50  0001 L CNN "RS Price/Stock"
-	1    2800 3200
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:+24V #PWR02
 U 1 1 5CCB380F
 P 3800 2950
@@ -118,13 +98,7 @@ F 3 "" H 2700 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3600 3200 3750 3200
-Wire Wire Line
 	3800 3200 3800 2950
-Wire Wire Line
-	2800 3200 2700 3200
-Wire Wire Line
-	2700 3200 2700 3550
 $Comp
 L Device:CP C1
 U 1 1 5CCB5250
@@ -275,10 +249,10 @@ Connection ~ 7250 4050
 Wire Wire Line
 	7250 4050 7250 4500
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR06
 U 1 1 5CD89F74
 P 6600 5000
-F 0 "#PWR?" H 6600 4800 50  0001 C CNN
+F 0 "#PWR06" H 6600 4800 50  0001 C CNN
 F 1 "GNDPWR" H 6604 4846 50  0000 C CNN
 F 2 "" H 6600 4950 50  0001 C CNN
 F 3 "" H 6600 4950 50  0001 C CNN
@@ -288,10 +262,10 @@ $EndComp
 Wire Wire Line
 	6600 5000 6600 4800
 $Comp
-L power:GNDPWR #PWR?
+L power:GNDPWR #PWR07
 U 1 1 5CD8B689
 P 7000 3400
-F 0 "#PWR?" H 7000 3200 50  0001 C CNN
+F 0 "#PWR07" H 7000 3200 50  0001 C CNN
 F 1 "GNDPWR" H 7004 3246 50  0000 C CNN
 F 2 "" H 7000 3350 50  0001 C CNN
 F 3 "" H 7000 3350 50  0001 C CNN
@@ -301,4 +275,19 @@ $EndComp
 Connection ~ 7000 3400
 Wire Wire Line
 	7000 3400 7450 3400
+$Comp
+L Connector_Generic:Conn_01x02 J1
+U 1 1 5CDA60F7
+P 2500 3300
+F 0 "J1" H 2418 2975 50  0000 C CNN
+F 1 "Conn_01x02" H 2418 3066 50  0000 C CNN
+F 2 "Connector_JST:JST_VH_S2P-VH_1x02_P3.96mm_Horizontal" H 2500 3300 50  0001 C CNN
+F 3 "~" H 2500 3300 50  0001 C CNN
+	1    2500 3300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2700 3200 3750 3200
+Wire Wire Line
+	2700 3550 2700 3300
 $EndSCHEMATC

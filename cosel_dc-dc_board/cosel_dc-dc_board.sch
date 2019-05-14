@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:cosel_dc-dc_board-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -105,7 +106,7 @@ U 1 1 5CCB5250
 P 4600 3650
 F 0 "C1" H 4718 3696 50  0000 L CNN
 F 1 "100u" H 4718 3605 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm" H 4638 3500 50  0001 C CNN
+F 2 "Capacitor_THT:CP_Radial_D6.3mm_P2.50mm" H 4638 3500 50  0001 C CNN
 F 3 "~" H 4600 3650 50  0001 C CNN
 	1    4600 3650
 	1    0    0    -1  
