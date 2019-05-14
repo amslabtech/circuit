@@ -2,3 +2,5 @@
 fp*
 *.bak
 *-bak
+gerber/
+*.un~
